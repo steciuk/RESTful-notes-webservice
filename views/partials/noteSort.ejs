@@ -1,0 +1,12 @@
+<form action="<%= url %>" method="GET">
+    <label>Sort by</label>
+    <select class="form-item" name="sortBy" onchange="this.form.submit()">
+    <% sortOptions.forEach(sortOption => { %> 
+        <% if (sortOption.value === sortChosen) { %>
+            <option selected label="<%= sortOption.label %>" value="<%= sortOption.value %>">
+        <% } else {%>
+            <option label="<%= sortOption.label %>" value="<%= sortOption.value %>"></option>
+        <% } %>
+    <% }) %>     
+    </select>
+</form>

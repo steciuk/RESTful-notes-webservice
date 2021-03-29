@@ -1,0 +1,18 @@
+.form-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+    height: 1rem;
+    padding: .25rem .5rem;
+    border-radius: .25rem;
+    font-family: "Gotham Rounded";
+}
+
+.form-item textarea {
+    height: 10rem;
+    resize: none;
+}

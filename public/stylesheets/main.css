@@ -1,0 +1,28 @@
+@import 'shared/fonts.css';
+@import 'shared/header.css';
+@import 'shared/buttons.css';
+@import 'shared/form.css';
+@import 'shared/noteList.css';
+
+:root {
+    font-family: 'Gotham Rounded';
+    font-size: 20px
+}
+
+body {
+    background: linear-gradient(to right,
+     rgba(141, 202, 255, 0.815),
+     rgba(1, 70, 134, 0.596));
+
+    word-wrap: break-word;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.inner-container{
+    margin: 0 2rem;
+}

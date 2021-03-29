@@ -1,0 +1,19 @@
+<p>Created: <%= notes[0].created.toISOString().substring(11,19) %> <%= notes[0].created.toISOString().substring(0,10) %></p>
+<% if (notes[0].isDeleted) { %> 
+    <h3>DELETED</h3>
+<% } %>
+<% notes.forEach(note => { %>
+    <div class="note-list-item">
+        <div>
+            <a class="note-title"><%= note.title %></a>
+        </div>
+        <div>
+            <%= note.content %>
+        </div>
+        <div>
+            Modified:
+            <%= note.modified.toISOString().substring(11,19) %>
+            <%= note.modified.toISOString().substring(0,10) %>
+        </div>
+    </div>
+<% }) %>

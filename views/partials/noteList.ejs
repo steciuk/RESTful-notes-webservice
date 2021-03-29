@@ -1,0 +1,17 @@
+<% notes.forEach(note => { %>
+    <div class="note-list-item">
+        <div>
+            <a class="note-title" href="<%= url %>/<%= note.id %>"><%= note.title %></a>
+        </div>
+        <div>
+            Created:
+            <%= note.created.toISOString().substring(11,19) %>
+            <%= note.created.toISOString().substring(0,10) %>
+        </div>
+        <div>
+            Modified:
+            <%= note.modified.toISOString().substring(11,19) %>
+            <%= note.modified.toISOString().substring(0,10) %>
+        </div>
+    </div>
+<% }) %>
